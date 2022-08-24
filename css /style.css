@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    background: #f4f4f4;
+    color: #555;
+    font: normal 18px;
+    font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    line-height: 1.6em;
+    width: 80%;
+    margin:auto;
+}
+.clr{
+    clear: both;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+.button{
+    background: #333;
+    color: white;
+    padding:5px 10px;
+}
+.container{
+    width: 100%;
+    margin:auto ; 
+}
+.hero p{
+    margin:3px;
+}
+.hero{
+    margin: 50px;
+    padding: 30px 30px;
+    background: #333;
+    color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+.hero:hover{
+    box-shadow: #000 3px 3px 30px;
+}
+.hero h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-decoration: underline;
+
+}
+.invert{
+    background: #fff;
+    color:lightcoral;
+    border:5px #000 dotted;
+}
+
+.category h2{
+   text-align :center;
+}
+.category ul{
+list-style-type: none;
+}
+.category li{
+    padding-bottom: 5px;
+    list-style-type: square;
+    border-bottom: 1px rgb(186, 182, 182) solid; 
+}
+.form{
+    padding:20px;
+
+}
+.form-group{
+    padding-bottom: 15px;
+
+}
+.form label{
+    display: block;
+}
+.form input[type="text"]{
+    padding:9px;
+    width:100%;
+}
+.block{
+    float: left;
+    width: 33.3%;
+    padding:10px
+    border : 1px black solid;
+    box-sizing : border-box;
+}
