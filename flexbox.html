@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin:auto;
+            width: 100%;
+            display: flex;
+            align-items: stretch;
+            justify-content: flex-start;
+            flex-wrap: wrap  ;    
+        }
+    .box1{
+        flex-basis:370px;
+        height:20vh;
+        background: #000;
+    }
+    .hover{
+        transition:.3s ease-in;
+    }
+    .box2{
+        flex-basis:370px;
+        height: 20vh;
+        background: rgb(66, 78, 22);
+    }
+    .box3{
+        flex-basis:365px;
+        height: 20vh;
+        background: blue;
+    }
+    .box4{
+        flex-basis:365px;
+        height: 20vh;
+        background-color: green;
+    }  
+    .box5{
+        flex-basis:365px;
+        height: 20vh;
+        background-color: rgb(151, 165, 20);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box1 hover">
+       
+    </div>
+    <div class="box2 hover">
+
+    </div>
+    <div class="box3 hover">
+
+    </div>
+    <div class="box4 hover">
+
+    </div>
+    <div class="box5 hover">
+
+    </div>
+    </div>
+</body>
+</html>
