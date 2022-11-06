@@ -325,25 +325,34 @@ const number = [1,2,3,4,5,6];
 
 // title.style.color = 'green;'  
 
-let red = document.getElementById('red');
-let yellow = document.getElementById('yellow')
-let green = document.getElementById('green');
-const square = document.querySelectorAll('.box')
-const timesClicked = {'red':0,'yellow':0,'green':0 }
-square.forEach(square => {
-    square.onclick = () => 
-{
-    timesClicked[square.value] += 1;
-    square.innerText = timesClicked[square.value]
-}
-})
-let cleargame = document.getElementById('cleargame')
-function clearScore(){
-    timesClicked.red = 0;
-    timesClicked.yellow = 0;
-    timesClicked.green = 0;
-    square.forEach(square => square.innerText = ' ')
-}
+// let red = document.getElementById('red');
+// let yellow = document.getElementById('yellow')
+// let green = document.getElementById('green');
+// const square = document.querySelectorAll('.box')
+// const timesClicked = {'red':0,'yellow':0,'green':0 }
+// square.forEach(square => {
+//     square.onclick = () => 
+// {
+//     timesClicked[square.value] += 1;
+//     square.innerText = timesClicked[square.value]
+// }
+// })
+// let cleargame = document.getElementById('cleargame')
+// function clearScore(){
+//     timesClicked.red = 0;
+//     timesClicked.yellow = 0;
+//     timesClicked.green = 0;
+//     square.forEach(square => square.innerText = ' ')
+// }
 
-const clearGameBtn = document.getElementById('cleargame');
-clearGameBtn.onclick = () => clearScore();
+// const clearGameBtn = document.getElementById('cleargame');
+// clearGameBtn.onclick = () => clearScore();
+
+// const randomFruit = (fruits) => {
+//     let randomNum = Math.floor(Math.random()* fruits.length);
+//     return fruits[randomNum];
+// }
+// let fruits = ['grapes','banana','mango','kiwi','orange','guave'];
+// console.log(randomFruit(fruits));
+
+  
