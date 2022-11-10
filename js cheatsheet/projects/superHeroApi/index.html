@@ -14,11 +14,17 @@
         }
         #hero-btn{
             border:0px;
-            padding: 1em .5em;
+            padding: .8em;
             color: white;
-            margin: 2em;
+            margin-block: 1em;
             background: #0275d8;
             font-weight: bold;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: .2s background;
+        }
+        #hero-btn:hover{
+            background: #0165bc;
         }
         #heroimage{
             width: 100%;
@@ -26,7 +32,7 @@
     </style>
 </head>
 <body>
-    <input type="text">
+    <input id="search" type="text" value="searchres">
     <button id="search-btn">Search</button>
     <button id="hero-btn">Random Hero</button>
     <br>
