@@ -11,8 +11,16 @@
             padding: 0px;
             box-sizing: border-boxz;
             font-family: 'Arial',sans-serif;
+           }
+        body{
+            background: #1b1b1b;
+            color: #ddd;
         }
-        #hero-btn{
+        p{
+            font-size: 1.3em;
+        }
+        #hero-btn,
+        #search-btn{
             border:0px;
             padding: .8em;
             color: white;
@@ -27,12 +35,17 @@
             background: #0165bc;
         }
         #heroimage{
-            width: 100%;
+            padding: 1em;
+         }
+        #search{
+            padding:1.2em;
+            margin-left: 5em;
+            margin-right: 1em;
         }
     </style>
 </head>
 <body>
-    <input id="search" type="text" value="searchres">
+    <input id="search" type="text"  placeholder="Search hero">
     <button id="search-btn">Search</button>
     <button id="hero-btn">Random Hero</button>
     <br>
