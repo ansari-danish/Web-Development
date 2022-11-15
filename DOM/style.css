@@ -18,6 +18,15 @@ li{
     background: rgba(0, 58, 4, 0.8);
     color: white;
 }
+.main-header .container {
+    display: flex;
+    justify-content: space-around;
+}
+.main-header .container input{
+    padding-inline-end: 5em;
+    padding-inline-start: .5em;
+    padding-block: 1em;
+}
 #main{
     padding: 2em;
     border: .5px solid grey;
@@ -27,7 +36,7 @@ li{
     margin: 2em 0em;
 }
 #main input[type=text]{
-    padding: .8em 5em;
+    padding:1em 5em 1em 1em;
 }
 #main input[type=submit]{
     padding: .8em 2em;
@@ -44,4 +53,16 @@ li{
     border: .5px solid grey;
     padding: 1em .5em;
     border-radius: 5px;
+}
+li{
+    position: relative;
+}
+li>*{
+    position: absolute;
+    right: 20px;
+    background: rgb(160, 7, 7);
+    padding: .5em;
+    outline:0px;
+    border: 0px;
+    color: white;
 }

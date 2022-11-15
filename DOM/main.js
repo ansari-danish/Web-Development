@@ -93,7 +93,7 @@
     // console.log(e.shiftKey)
     // console.log(e.ctrlKey)  }
     // let output = document.getElementById('output');
-    let div = document.getElementById('box')
+    // let div = document.getElementById('box')
 // let btn = document.getElementById('btn')
 // let input = document.querySelector('input[type="text"]');
 // let form  = document.querySelector('form')
@@ -117,5 +117,31 @@
 // box.innerHTML = `<h1> ${e.target.value} </h1>`
 // output.innerHTML = `<h3>MouseX:`+e.offsetX+`</h3> <h3>MouseY:`+e.offsetY+`</h3>` 
 // div.style.backgroundColor = "rgb("+e.offsetX+","+e.offsetY+",20)"
-// document.body.style.backgroundColor = "rgb("+e.offsetX+","+e.offsetY+",200)"
+// document.body.style.backgroundColor = "rgb("+e.offsetX+","+e.offsetY+",200)"}
+
+let form = document.querySelector('form')
+let ul  = document.querySelector('ul');
+form.addEventListener('submit',addItem);
+ul.addEventListener('click',removeItem)
+
+function addItem (e){
+    e.preventDefault()
+    let newItem = document.getElementById('input').value;
+    let li = document.createElement('li')
+    li.className = 'list-group-item'
+    li.appendChild(document.createTextNode(newItem));
+    let deleteBtn = document.createElement('button')
+    deleteBtn.className = 'danger'
+    deleteBtn.appendChild(document.createTextNode('X'))
+    li.appendChild(deleteBtn)
+    ul.appendChild(li);
 }
+function removeItem(e) {
+    if(e.target.classList.contains('danger')){
+        if(confirm("are u sure")){
+            let list = e.target.parentElement;
+            ul.removeChild(list);
+        }
+    }
+}
+

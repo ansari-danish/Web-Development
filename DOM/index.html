@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Manipulation</title>
     <link rel="stylesheet" href="style.css">
-</head>
+   </head>
 <body>
     <header class="main-header">
         <div class="container">
@@ -17,21 +17,27 @@
         <div id="main" class="card-body">
             <h2>Add items</h2>
             <form class="form">
-                <input type="text">
-                <select>
+                <input type="text" id="input">
+                <!-- <select>
                     <option value="">Male</option>
                     <option value="">FeMale</option>
                     <option value="">Others</option>
-                </select>
+                </select> -->
                 <input type="submit" value="Submit">
             </form>
             
             <h2>Items</h2>
             <ul id="items" class="list-group">
-                <li class="list-group-item">item 1</li>
-                <li class="list-group-item">item 2</li>
-                <li class="list-group-item">item 3</li>
-                <li class="list-group-item">item 4</li>
+                <li class="list-group-item">item 1 <button class="danger">
+                    X
+                </button></li>
+                <li class="list-group-item">item 2
+                    <button class="danger">
+                        X
+                    </button>
+                </li>
+                <li class="list-group-item">item 3 <button class="danger">X</button></li>
+                <li class="list-group-item">item 4 <button class="danger">X</button></li>
             </ul>
             <br>
             <button id="btn" class="hello">Send</button>
