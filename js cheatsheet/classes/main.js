@@ -78,15 +78,15 @@
 // console.log(car.showCurrentSpeed())
 
 
-let x= [1,2,3,4];
+// let x= [1,2,3,4];
 // console.log(typeof 8)
 // x[4]=15;
 // console.log(x);
-Array.prototype.myPush = function(item){
-    this[this.length] = item;
-    return this;
-}
-const fruits = ['banana','grapes','mango','strawberry']
+// Array.prototype.myPush = function(item){
+//     this[this.length] = item;
+//     return this;
+// }
+// const fruits = ['banana','grapes','mango','strawberry']
 // console.log(fruits.myPush('cookie'))
 
 // const arr = [1,2,3,4,5]
@@ -104,51 +104,50 @@ const fruits = ['banana','grapes','mango','strawberry']
 // }
 
 
-    class bank {
-        constructor(balance){
-        this.balance =balance; 
-    }
-    deposit(money){
-        this.balance += money; 
-        console.log({balance: this.balance})
-    }
-    withdraw(money){
-        if(money > this.balance){
-            // console.log(`Unsufficient fund ${this.balance}`)
-            alert("Unsuffient fund")
-            return;
-        }else{
-            this.balance -= money;
-          
-        }
-    }
-    show(){
-        // console.log(this.balance);
-        return this.balance;
-    }
-}
-const bankSystem = new bank()
+//     class bank {
+//         constructor(balance){
+//         this.balance = balance; 
+//     }
+//     deposit(money){
+//         this.balance += money; 
+//         // console.log({balance: this.balance})
+//         return this.balance;
+//     }
+//     withdraw(money){
+//         if(money > this.balance){
+//             // console.log(`Unsufficient fund ${this.balance}`)
+//             alert("Unsuffient fund")
+//             return;
+//         }else{
+//            this.balance -= money;
+//         }
+//     }
+//     show(){
+//         // console.log(this.balance);
+//         return this.balance;
+//     }
+// }
+// const bankSystem = new bank(0)
 // bankSystem.show() 
 // bankSystem.deposit(100)
 // bankSystem.show()
 // bankSystem.withdraw(250);
 // bankSystem.show()
 
-const depositButton = document.getElementById('deposit')
-const withdrawButton = document.getElementById('withdraw')
-const inputAmount= document.getElementById('amount')
-const balance = document.getElementById('balance');
+// const depositButton = document.getElementById('deposit')
+// const withdrawButton = document.getElementById('withdraw')
+// const inputAmount= document.getElementById('amount')
+// const balance = document.getElementById('balance');
+// const amount = (Number(inputAmount.value));
+// function print (){
+//     balance.innerText = 'Balance: '+ bankSystem.show()+' ';
+// }
 
-function print (){
-    balance.innerText = 'Balance: '+ bankSystem.show()+' ';
-}
-
-depositButton.onclick = () =>{
-    const amount = Number(inputAmount.value)
-    bankSystem.deposit(amount);
-    print();
-}
-withdrawButton.onclick = () =>{
-    bankSystem.withdraw(Number(inputAmount.value));
-    print()
-}
+// depositButton.onclick = () =>{
+//     bankSystem.deposit(amount);
+//     balance.innerText = `Balance: ${bankSystem.show()}`
+// }
+// withdrawButton.onclick = () =>{
+//     bankSystem.withdraw(amount);
+//     balance.innerText = `Balance: ${bankSystem.show()}`
+// }

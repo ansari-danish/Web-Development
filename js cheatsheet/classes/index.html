@@ -34,11 +34,11 @@
             height: 
             30vh;
         }
-        form{
+        .form{
             display: flex;
             flex-direction:column ;
         }
-        form > *{
+        .form > *{
             margin-block: .5em;
             padding: .5em 1em;
         }
@@ -65,12 +65,11 @@
         <div id="balance">
             <p>Balance: 0</p>
         </div>
-        <form>
+        <div class="form">
             <input type="text" placeholder="Amount" id="amount">
             <button id="deposit">Deposit</button>
             <button id="withdraw">Withdraw</button>
-        </form>
-         
+         </div>
     </div>
 </body>
 </html>
