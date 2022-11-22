@@ -30,9 +30,10 @@ document.querySelector('button')
     weather.search();
 })
  
-document.querySelector('.search-bar').addEventListener('keyup', function(event){
-    if(event.key == "Enter"){
-        weather.search();
-    }
+document.querySelector('.search-bar').addEventListener('keyup', function(){
+    // if(event.key == "Enter"){
+    //     weather.search();
+    // }
+    weather.search();
 })
-weather.fetchWeather('')
+weather.fetchWeather()
