@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 id="header-title">Item Listen</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div id="main" class="card-body">
+            <h2>Add items</h2>
+            <form class="form">
+                <input type="text" id="input">
+                <!-- <select>
+                    <option value="">Male</option>
+                    <option value="">FeMale</option>
+                    <option value="">Others</option>
+                </select> -->
+                <input type="submit" value="Submit">
+            </form>
+            
+            <h2>Items</h2>
+            <ul id="items" class="list-group">
+                <li class="list-group-item">item 1 <button class="danger">
+                    X
+                </button></li>
+                <li class="list-group-item">item 2
+                    <button class="danger">
+                        X
+                    </button>
+                </li>
+                <li class="list-group-item">item 3 <button class="danger">X</button></li>
+                <li class="list-group-item">item 4 <button class="danger">X</button></li>
+            </ul>
+            <br>
+            <button id="btn" class="hello">Send</button>
+            <div id="output"></div>
+              <div id="box" style="width: 300px;height: 200px; background:rgb(195, 195, 195)">
+                <h2>hello</h2>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

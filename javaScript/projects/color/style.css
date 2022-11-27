@@ -1,0 +1,38 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    border: 0px;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    margin: 1em;
+}
+#red{
+    background: red;
+}
+#yellow{
+    background: yellow;
+}
+#green{
+    background: green;
+}
+#cleargame{
+text-align: center;
+margin-left: 40%;
+padding: .5em;
+color: white;
+background-color: #24a0ed;
+font-size: 1.5em;
+border-radius: 5px;
+}
+#cleargame:hover{
+    background: #0a96ed;
+}
