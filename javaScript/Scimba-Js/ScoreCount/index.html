@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score count</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="center">Score Count app</h1>
+    <div class="container">
+        <div class="home">
+            <h1>HOME</h1>
+            <div class="score" id="home-score">
+                0
+            </div>
+            <div class="button">
+                <a href="#"onclick="home1()">+1</a> 
+                <a href="#"onclick="home2()">+2</a> 
+                <a href="#"onclick="home3()">+3</a>
+              </div>
+        </div>
+        <div class="guest">
+            <h1>GUEST</h1>
+            <div class="score" id="guest-score">
+                0
+            </div>
+            <div class="button">
+              <a href="#"onclick="guest1()">+1</a> 
+              <a href="#"onclick="guest2()">+2</a> 
+              <a href="#"onclick="guest3()">+3</a>
+            </div>
+        </div>
+    </div>
+    <button id="reset" onclick="resetNum()">Reset</button>
+
+
+<script src="main.js"></script>
+</body>
+
+</html>

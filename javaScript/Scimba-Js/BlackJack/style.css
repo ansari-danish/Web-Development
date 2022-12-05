@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+h1{
+    color: goldenrod;
+    font-size: 3em;
+}
+body{
+    background: green;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+#message-el{
+    font-style: italic;
+}
+button{
+    width: 150px;
+    background: goldenrod;
+    color: #016f32;
+    border: 0px;
+    padding-block: .5em;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-block: .3em;
+}
