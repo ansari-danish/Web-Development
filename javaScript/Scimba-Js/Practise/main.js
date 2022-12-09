@@ -127,13 +127,50 @@ sortFruit()
 
 
 
-function sortFruit(){
-    for(let i = 0 ; i<fruits.length ; i++){
-        if(fruits[i]==="apple"){
-            appleShelf.textContent += fruits[i] + " ";
-        }
-        else if(fruits[i]==="orange"){
-            orangeShelf.textContent += fruits[i] + " ";
-        }
-    }
-}
+// function sortFruit(){
+//     for(let i = 0 ; i<fruits.length ; i++){
+//         if(fruits[i]==="apple"){
+//             appleShelf.textContent += fruits[i] + " ";
+//         }
+//         else if(fruits[i]==="orange"){
+//             orangeShelf.textContent += fruits[i] + " ";
+//         }
+//     }
+// }
+
+// SETTING THE STAGE
+// const  player = "Per"
+// const opponent = "Nick"
+// const game = "AmazingFighter"
+// let points = 0
+// let hasWon = false
+
+// // PLAYING THE GAME
+// points += 100
+// hasWon = true
+
+// // ANNOUNCING THE WINNER
+// if (hasWon) {
+//     console.log(`${player} got ${points} poinis and won the ${game} game!`);
+// } else {
+//      console.log(`The winner is ${opponent}! ${player} lost the game`);
+// }
+
+// Go through all variables and decide if they should be let or const
+// Change the console logs to use template strings instead of double quotes
+ 
+
+
+// let myCourse =  ["Learn Css animaiton","ul design fundamentals","intro to clean code"];
+
+// log(myCourse);
+
+// function log(course){
+//     // course.forEach(element => {
+//     //     console.log(element);
+//     // });
+
+//     for(let i = 0;i<course.length;i++){
+//         console.log(course[i]); 
+//     }
+// }
