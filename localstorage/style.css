@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+body{
+  font-family:'Roboto', Arial, Helvetica, sans-serif;
+}
+main{
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  top: 7vh;
+}
+h1{
+  text-align: center;
+  font-family: inherit;
+  padding-block: .2em;
+  color: steelblue;
+  font-size: 2.5em;
+}
+form{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1em;
+}
+form input{
+  margin-block: .5em;
+  padding-inline: .5em;
+  font-size: 1.2em;
+  padding-block: .5em;
+  border-radius: 10px;
+  font-family: inherit;
+  border: 3px solid steelblue;
+}
+form input[type="submit"]{
+  background: #2991e6;
+  color: white;
+  border: 0px;
+  transition: .3s background-color ease;
+}
+form input[type="submit"]:hover{
+  background-color: #008ed5;
+}
+form .number{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form input[type="number"]{
+  width: 49.5%;
+}
+#students{
+  flex-direction: column;
+  display: none;
+  margin-inline: 1em;
+  padding: .3em;
+  border:2px solid grey;
+  border-radius: 10px;
+  text-align: center;
+  background: rgba(128,128,128, .2);
+}
+#students > p{
+  margin-top: 2em; 
+}
+@media (max-width:600px) {
+  form .number{
+    flex-direction: column;
+  }
+  form input[type="number"]{
+    width:100%;
+  }
+}
