@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+.wrapper{
+    text-align: center;
+    padding: 2em;
+}
+.wrapper img{
+    margin-top: 2em;
+    width: 350px;
+}
+.colorList{
+    border: 2px solid;
+    margin-top: 2em;
+    width: 60px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.colorList li{
+    height: 30px;
+}
+.colorList .red{
+    background: red;
+}
+.colorList .green{
+    background: green;
+}
+.colorList .yellow{
+    background: greenyellow;
+}
+.colorList .blue{
+    background-color: blue;
+}
+
