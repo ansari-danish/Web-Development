@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days Schedule</title>
+    <script src="main.js" defer></script>
+</head>
+<style>
+    .wrapper{
+        text-align: center;
+    }
+    input, button{
+        padding: .8em 1.5em;
+        font-size: 1.1em;
+        border: 0px;
+        border-bottom: 1px solid;
+    }
+    button{
+        color: white;
+        background: blueviolet;
+        outline: none;
+        border: none;
+        transition: .3s background ease;
+    }
+    button:hover{
+        background: rgb(120, 12, 221);
+        transition: .3s background ease;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <h1>Days Schedule</h1>
+
+        <input type="text" placeholder="Days" >
+        <button class="check">Check</button>
+
+        <h1 class="result"></h1>
+    </div>
+</body>
+</html>
