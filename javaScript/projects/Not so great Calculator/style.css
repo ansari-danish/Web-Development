@@ -1,0 +1,22 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    }
+li{
+    list-style: none;
+}
+.wrapper{
+    text-align: center;
+    margin-top: 2em;
+}
+.wrapper .list{
+    margin-block: 4em;
+    border: 2px solid;
+    display: inline-block;
+}
+.wrapper li{
+    padding: 1em;
+    border-bottom: 2px solid;
+    cursor: pointer;
+}
