@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angry Parents</title>
+    <script src="main.js" defer></script>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    form{
+        padding: 1em;
+        text-align: center;
+    }
+    div{
+        margin-block: 1em;
+    }
+    button{
+        padding: .5em 2em;
+        border: none;
+        outline: none;
+        background: purple;
+        color: white;
+        border-radius: 5px;
+}
+    .render{
+        text-align: center;
+        color: red;
+        font-size: 2em;
+    }
+</style>
+<body>
+    <h1>YOU DONE MESSED UP</h1>
+    <form>
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName">
+            <label for="firstMiddleName">First Middle Name</label>
+            <input type="text" id="firstMiddleName">
+        </div>
+        <div>
+            <label for="lastMiddleName">Last Middle Name</label>
+            <input type="text" id="lastMiddleName">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName">
+        </div>
+        <button type="submit">Yell</button>
+    </form>
+    <h1 class="render"></h1>
+</body>
+</html>
