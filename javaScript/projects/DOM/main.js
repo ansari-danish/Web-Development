@@ -51,16 +51,16 @@ heading.addEventListener('click', () => {
     if(age < 16){
         paragraph.textContent = 'You can not drive'
     }
-    if(age > 16 && age<=18){
+    else if(age<18){
         paragraph.textContent = "You can't hate from outside of the club, because they can't even get it"
     }
-    if(age > 18 && age<=21){
+    else if(age<21){
         paragraph.textContent = "You can't get DRUNK"
     }
-    if(age > 21 && age<=25){
+    else if(age<25){
         paragraph.textContent = "You can't rent cars affordably"
     }
-    if(age > 25 && age <= 30){
+    else if(age < 30){
         paragraph.textContent = "you can't rent fancy cars affordable"
     }
     else{
