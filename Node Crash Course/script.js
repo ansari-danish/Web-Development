@@ -92,10 +92,19 @@
 
 const http = require('http')
 const fs = require('fs')
-
+const _ = require('lodash')
 
 const app = http.createServer((req , res) => {
-    console.log(req)
+    // console.log(req)
+
+    const num = _.random(0,20)
+    console.log(num)
+
+    const greet = _.once(() => {
+        console.log("Hello")
+    })
+    greet()
+
     let path = './views/'
     switch(req.url){
         case '/':
