@@ -151,3 +151,59 @@
 //     bankSystem.withdraw(amount);
 //     balance.innerText = `Balance: ${bankSystem.show()}`
 // }
+
+
+
+// Create an espresso machine class that makes machines with 4 properties with 3 methods
+
+// class EsspressMachine {
+//     constructor (color, make,model, price) {
+//         this.color = color
+//         this.make = make
+//         this.model = model 
+//         this.price = price
+//     }
+//     turnOn(){
+//         console.log("Good day, I am now on!")
+//     }
+//     steam(){
+//         console.log("ITSS SUMMERR SALESSS 50%%")
+//     }
+//     brew(){
+//         console.log("Good stuff coming this way")
+//     }
+// }
+
+// let esspressAbout = new EsspressMachine('red', 'honda', 'first', 800)
+
+// let seriousBusinessCalc = {
+//     hourRate :30,
+//     hours: 140,
+//     taxRate : .40,
+//     calculateProfit: function () {
+//         return this.hourRate * this.hours * (1 - this.taxRate)
+//     }
+// }
+
+// console.log(seriousBusinessCalc.calculateProfit())
+
+
+class Bike {
+    constructor(name, series) {
+        this.name = name,
+        this.series = series
+    }
+    showName() {
+        return this.name
+    }
+}
+class Truck extends Bike {
+    constructor(travel, agency) {
+        this.travel = travel,
+        this.agency = agency
+    }
+    showTruck() {
+        return this.travel
+    }
+}
+console.log(Truck)

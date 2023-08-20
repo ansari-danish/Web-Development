@@ -37,12 +37,15 @@ body {
   .movies__container {
     padding-left: 50px;
     display: flex;
-    overflow-x: scroll;
-    overflow: hidden;
+    overflow:overlay;
   }
   
-  .original__movies::-webkit-scrollbar {
+  .original__movies::-webkit-scrollbar{
     display: none;
+  }
+  body {
+    scrollbar-width: none;
+    scroll-snap-type: mandatory;
   }
   
   .original__movies img {

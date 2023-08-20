@@ -59,7 +59,7 @@ function fetchMovies(url, dom_element, path_type) {
 }
 
 //  ** Function that displays the movies to the DOM **
-showMovies = (movies, dom_element, path_type) => {
+const showMovies = (movies, dom_element, path_type) => {
   
   // Create a variable that grabs id or class
   let moviesEl = document.querySelector(dom_element);
