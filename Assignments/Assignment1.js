@@ -1,3 +1,4 @@
+/* 
 const country = "India"
 const continent = "Asia"
 let indiaPopulation = 140877147;
@@ -53,3 +54,49 @@ if(day === 'monday') {
 } else {
     console.log("Not a valid day")
 }
+
+
+
+const numNeighbours = prompt("How many neighbour countries does your country have??")
+
+if(Number(numNeighbours === 0)) {
+    console.log("Only 1 border!")
+} else if (Number(numNeighbours >= 1)) {
+    console.log("More than 1 border");
+} else {
+    console.log("No border");
+}
+
+
+*/
+
+// const language = "hindi";
+
+// switch (language) {
+//     case "mandarin": 
+//     case "chinese": 
+//     console.log("Most number of native speakers!")
+//     break;
+//     case "spanish": 
+//     console.log("2nd place in number of native speakers")
+//     break;
+//     case "english": 
+//     console.log("3rd place");
+//     break;
+//     case "hindi":
+//     console.log("Number 4")
+//     break;
+//     case "arabic":
+//         console.log("5th most spoken language")
+//         break;
+//     default :
+//     console.log("Great language too:D")
+// }
+
+// const country = "india";
+// const population = 1000000;
+// if(population > 3300000) {
+//     console.log(`${country}'s population is above average`)
+// } else {
+//     console.log(`${country}'s population is below average`)
+// }
