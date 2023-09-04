@@ -37,3 +37,19 @@ console.log('19' - '13' + '17') // 617
 console.log('19' - '13' + 17) // 23
 console.log('123' < 57) // false
 console.log(5 + 6 + '4' + 9 - 4 - 2) // 1143
+
+const day = 'monday'
+if(day === 'monday') {
+    console.log("Plan a course stucture")
+    console.log("Go to coding meetup")
+} else if (day === 'tuesday') {
+    console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log("Write code examples")
+} else if (day === 'friday') {
+    console.log("Record videos")
+} else if (day === 'saturday' && day === 'sunday') {
+    console.log("Enjoy the weekends :D")
+} else {
+    console.log("Not a valid day")
+}
