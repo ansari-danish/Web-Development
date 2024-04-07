@@ -1,4 +1,5 @@
 import { Router } from "express";
+
 import {
   handleAllUser,
   handleAllData,
@@ -10,11 +11,14 @@ import {
 
 const router = Router();
 
-router.get("/users", handleAllUser);
-router.post("/users", handleCreateUser);
-router.get("/data", handleAllData);
-router.get("/users/:id", handleUserById);
-router.patch("/users/:id", handleEditUser);
-router.delete("/users/:id", handleDeleteUser);
+router.route("/users").get(handleAllUser).post(handleCreateUser);
+
+router.route("/data", handleAllData);
+
+router
+  .route("/users/:id")
+  .get(handleUserById)
+  .patch(handleEditUser)
+  .delete(handleDeleteUser);
 
 export default router;

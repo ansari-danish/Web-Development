@@ -59,7 +59,7 @@ const handleEditUser = async (req, res) => {
     gender,
     wealth,
   });
-  return res.send(response);
+  return res.status(200).json({ response });
 };
 
 export {
